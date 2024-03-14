@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tubelight</title>
+</head>
+<body>
+  <h1>Testing</h1>
+  <button
+  onlick="toggleLight()">Turn on the light
+  </button>
+
+	<img id="on" src="on.jpg" style="width:100px">
+	<img id="off" src="off.jpg" style="width:100px display:none">
+
+	<script type="text/javascript">
+		function toggleLight() {
+			var bulb = document.getElementById("on");
+			var bulb_off = document.getElementById("off");
+			if (bulb.style.disply === "none"){
+				bulb.style.disply = "block"
+				bulb_off.style.disply = "none"
+			} else {
+				bulb_off.style.disply = "block"
+				bulb.style.disply = "none"
+			}
+		}
+	</script>
+</body>
+</html>

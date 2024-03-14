@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <body>
+
+    <h2>Voting Form</h2>
+    <form>
+      <label> First Name </label>
+      <input type="text" id="first_name" placeholder="Enter your first name"><br><br>
+      
+      <label> Last Name</label>
+      <input type="text"  id= "last_name" placeholder="Enter your last name"><br><br>
+      
+      <label> age </label>
+      <input type="number" id="age"><br><br>
+      <!-- <input type="date" id="date_of_birth"><br><br> -->
+      
+      <label> gender</label>
+      <select>
+        <option selected="true">Select your gender</option>
+        <option>Male</option>
+        <option>Female</option>
+      </select><br><br>
+      <button onclick="checkVoterAge()">Submit</button>
+    </form>
+  </body>
+  <script type="text/javascript">
+    function checkVoterAge() {
+      // const birthdate = document.getElementsByName("date_of_birth")
+      let age = document.getElementById("age").value
+      let first_name = document.getElementById("first_name").value
+      let last_name = document.getElementById("last_name").value
+      if (age > 18 ) {       
+        alert("Congratulation! " + first_name +' ' +last_name)
+      } else {
+        alert("Sorry! " + first_name +' ' +last_name)
+      }
+    }
+  </script>
+</html>
