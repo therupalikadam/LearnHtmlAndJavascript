@@ -1,0 +1,43 @@
+  <h2>Basic Table<h2>
+  <body>
+    <table>
+      <style>
+        .pending{
+          background-color: red;
+        }
+
+        .In_progress{
+          background-color: yellow;
+        }
+
+
+        th,td,table{
+          border:1px solid black;
+          padding: 30px;
+/*margin: 50px;*/
+          text-align:center;
+        }
+        tr:hover{background-color:whitesmoke;}
+      </style>
+      <tr>
+        <th>Profile</th>
+        <th>VatNo</th>
+        <th>Created</th>
+        <th>Status</th>
+      </tr>
+
+      <tr>
+        <td>Jacob</td>
+        <td>12345</td>
+        <td> 12 May 2024</td>
+        <td><button class="pending">pending</button></td>
+      </tr>
+
+      <tr>
+        <td>Massy</td>
+        <td>12345</td>
+        <td>15 may 2024</td>
+        <td><button class="In_progress">In progress</button></td>
+      </tr>
+    </table>
+  </body>

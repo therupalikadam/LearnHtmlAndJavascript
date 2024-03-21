@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <title> Registration Form </title>
+  <body>
+    <label> Full Name</label>
+    <input text="type" id="full_name" placeholder="Enter your full name"><br><br>
+
+    <label> birthdate</label>
+    <input type="date" id="birth_date" plac="Enter your birthdate"><br><br>
+
+    <label>User Type</label>
+    <select id="user_type">
+      <option></option>
+      <option value="student"> Student </option>
+      <option value="teacher"> Teacher </option>
+      <option value="professor"> Professor </option>
+      <option value="librarian"> Librarian </option>
+    </select><br><br>
+
+    <label> Contact</label><br><br>
+    <input type="number"  id="contact placeholder="enter your contact"><br><br>
+
+    <h4> Select your hobbies </h4>
+    <label> Play piano </label>
+    <input type="checkbox"><br><br>
+
+    <label> Swimming </label>
+    <input type="checkbox"><br><br>
+
+    <label>gaming</label>
+    <input type="checkbox"><br><br>
+
+    <label>singing</label>
+    <input type="checkbox"><br><br>
+
+    <button onclick="checkValidation()">Submit</button>
+    <button onclick="resetForm()">Reset</button>
+  </body>
+  <script type="text/javascript">
+    function checkValidation(){
+      var full_name = document.getElementById("full_name").value
+      var birth_date = document.getElementById("birth_date").value
+      var user_type = document.getElementById("user_type").value
+      console.log("=======", user_type)
+      if (full_name == "") {
+        alert("Enter valid full name")
+      }
+      if (user_type == "") {
+        alert("Plese select user type")
+      }
+      if (birth_date == "") {
+        alert("Set date of birth")
+      } else {
+        login()
+      }
+    }
+
+    function resetForm(){
+      alert("resetfForm")
+    }
+
+    function login(){
+      alert("login success")
+    }
+  </script>
+</html>

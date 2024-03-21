@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Web design</title>
+  <head>
+    <style>
+      body, html{
+        height: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      * {
+        box-sizing: border-box;
+      }
+      
+      .photo {
+        background-image: url("natural.jpg");
+        /*height: 500px;
+        width: 500%;*/
+        min-height: 380px;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+      
+      .container {
+        position: absolute;
+        right: 0;
+        margin: 20px;
+        max-width: 300px;
+        padding: 16px;
+        background-color: white;
+      }
+      .header {
+        position: abosulte;
+        right: 0;
+        margin: 20px;
+        max-width: 300px;
+        padding: 16px;
+        background-color: navajowhite;
+      }
+      
+      input[type=text], input[type=password]{
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border: none;
+        background: #f1f1f1;
+      }
+
+      input[type=text]:focus,input[type=password]:focus{
+        background-color: #ddd;
+        outline: none;
+      }
+
+      .btn{
+        background-color: #04AA6D;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        width: 50%;
+        opacity: 0.5;
+      }
+
+      .btn:hover {
+        opacity:1;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        display: inline;
+      }
+
+      .gsearch {
+        position: center;
+        background-color: orangered;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="photo"> 
+              <label for= "gsearch">Search Google</label>
+        <input type="search"  name="gserch" placeholder="Type to Search">
+        <button class="gsearch">search</button>
+
+      <ul class="header">
+        <li><a href="home">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="service">Service</a></li>
+        <li><a href="design">Design</a></li>
+        <li><a href="contact">Contact</a></li>
+      </ul>
+
+      <form class="container">
+       <h2>Login Here</h2>
+        <label for="Email"></label>
+        <input type="text" placeholder="Enter Email Here"required><br>
+        <label for="password"></label>
+        <input type="password" placeholder="Enter Password Here" required><br>
+        <button class="btn">Login</button>
+      </form>
+      <h2>ProRoz</h2>
+      <h1> Web Design & Development Course</h1>
+      <p> Web Design is Specialisation of the design steram. they also use HTML,css,WYAIWYG editing software,mark up validators etc. to create design elements</p>
+      <button> JOIN US</button>
+    </div>
+  </body>
+</html>
